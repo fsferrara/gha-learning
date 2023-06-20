@@ -1,0 +1,11 @@
+name: "sample-action-1"
+description: "Sample Action 1"
+
+runs:
+  using: "composite"
+  steps:
+    - name: "step-1"
+      run: $GITHUB_ACTION_PATH/action-1-step-1.sh
+      shell: bash
+      env:
+        BASE_PATH: $GITHUB_ACTION_PATH
