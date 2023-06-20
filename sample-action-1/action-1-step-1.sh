@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 
-echo -e "hi from the action1-step-1";
-echo -e "GITHUB_ACTION_PATH=${GITHUB_ACTION_PATH}";
+source $(dirname "$0")/lib/function1.sh
+source $(dirname "$0")/lib/function2.sh
+
+script-hello
+print-env-vars
