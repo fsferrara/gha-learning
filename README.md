@@ -1,2 +1,3 @@
 # gha-learning
-Learning repository about GHA
+Learning repository about GHA.
+
